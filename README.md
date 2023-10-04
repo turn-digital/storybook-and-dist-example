@@ -4,7 +4,8 @@ Follow these steps to set up the Carbon for IBM Dotcom project on your local mac
 
 1. **Fork the Project**
 
-   - Navigate to the main repository and click the Fork button on the top-right corner.
+   - Navigate to the main repository here is the link: https://github.com/carbon-design-system/carbon-for-ibm-dotcom
+     and click the Fork button on the top-right corner.
 
 2. **Clone Your Fork**
 

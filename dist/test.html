@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="http://192.168.56.1:8080/button.min.js"></script>
+    <script type="module" src="http://192.168.56.1:8080/slider.min.js"></script>
+    <script type="module" src="http://192.168.56.1:8080/custom-component.min.js"></script>
+</head>
+<body>
+    <div>
+        <bx-btn>Custom Button</bx-btn>
+    </div>
+    <div>
+        <bx-slider
+            label-text="Slider"
+            max="100"
+            min="0"
+            step="1"
+            value="50">
+        </bx-slider>
+    </div>
+    <div>
+        <bx-custom-component textContent="Some new text from props" buttonName="Props name" href="https://lit.dev/docs/" mainContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at fugiat placeat expedita dolore nobis eligendi corporis iste, cumque obcaecati consequuntur nostrum quidem itaque doloremque? Itaque minima unde iusto voluptatum!"/>
+    </div>
+</body>
+</html>

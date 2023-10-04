@@ -46,6 +46,7 @@ Follow these steps to set up the Carbon for IBM Dotcom project on your local mac
 5. **Building the 'dist' Folder**
 
    - To build the 'dist' folder with all components that you can host on your server, follow these commands on the main branch:
+     You can use Windows to build it.
 
      ```
      yarn install
@@ -55,6 +56,7 @@ Follow these steps to set up the Carbon for IBM Dotcom project on your local mac
 6. **Building Storybook**
 
    - To build Storybook, navigate to the 'cwc-v2-release/v2.0.1' branch and run the following commands:
+     You will need ubuntu 20.04 or later to build it.
 
      ```
      yarn install --immutable --immutable-cache

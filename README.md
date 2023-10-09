@@ -43,34 +43,23 @@ Follow these steps to set up the Carbon for IBM Dotcom project on your local mac
 
    - Switch to the required Node.js version. Check the supported Node.js versions in the 'package.json' file under the "engines" key.
 
-5. **Building the 'dist' Folder**
+5. **Building the 'dist' and 'storybook-static' Folder**
 
-   - To build the 'dist' folder with all components that you can host on your server, follow these commands on the main branch:
-     You can use Windows to build it.
+   - To build the 'dist' and 'storybook-static' folder with all components that you can host on your server and the storybook-static foled that you can also put on      your server you only need to follow these commands on the main branch:
+     Work on Ubuntu 20.04
+     In the source folder run this comands
 
      ```
      yarn install
      yarn build
      ```
 
-6. **Building Storybook**
-
-   - To build Storybook, navigate to the 'cwc-v2-release/v2.0.1' branch and run the following commands:
-     You will need ubuntu 20.04 or later to build it.
-
-     ```
-     yarn install --immutable --immutable-cache
-     yarn lerna run --scope @carbon/web-components build
-     cd packages/carbon-web-components
-     yarn build-storybook
-     ```
-
-7. **Storybook and Components**
+6. **Storybook and Components**
 
    - Navigate to the 'packages/carbon-web-components' directory, where you'll find the 'storybook-static' and 'dist' folders.
    - Running Storybook static on your server will provide you with Storybook containing all web components.
 
-8. **Ready to Use**
+7. **Ready to Use**
 
    - Now you have both folders needed to run Storybook on your server and import web components from your own server.
 

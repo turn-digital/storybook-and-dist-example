@@ -65,12 +65,11 @@ Follow these steps to set up the Carbon for IBM Dotcom project on your local mac
 
 10. **Creating a New 'dist' Folder with Custom Component**
     - If you need to create a new 'dist' folder that includes your custom component, go to the main branch.
-    - You'll need to modify the 'carbon-for-ibm-dotcom/packages/carbon-web-components/src/globals/settings.ts' file.
+    - You'll need to modify the `carbon-for-ibm-dotcom/packages/carbon-web-components/src/globals/settings.ts` file.
     - Add a new line in the settings file, like this:
       ```
       ${prefix}-custom-component,
       ```
-    - The 'settings.ts' file is located in the same folder as the Storybook.
     - After adding the line, run the following command in the source directory:
       ```
       yarn build

@@ -47,3 +47,31 @@ Follow these steps to set up the Carbon for IBM Dotcom project on your local mac
    - Running Storybook static on your server will provide you with Storybook containing all web components.
 8. **Ready to Use**
    - Now you have both folders needed to run Storybook on your server and import web components from your own server.
+     
+9. **Adding Custom Components to Storybook**
+   - To include custom components in Storybook, follow these steps:
+     - Navigate to the 'cwc-v2-release/v2.0.1' branch.
+     - Locate the path for custom components: `carbon-for-ibm-dotcom/packages/carbon-web-components/src/components`.
+       Example custom component folders are available in this repository for reference.
+     - After adding your custom component, run the following commands in the directory `carbon-for-ibm-dotcom/packages/carbon-web-components`:
+       ```
+       yarn build-storybook
+       ```
+     - This will generate a new 'storybook-static' folder that you can host on your server.
+     - To run Storybook from your IDE and test your component without building it, use the following command in the same directory:
+       ```
+       yarn storybook
+       ```
+
+10. **Creating a New 'dist' Folder with Custom Component**
+    - If you need to create a new 'dist' folder that includes your custom component, go to the main branch.
+    - You'll need to modify the 'carbon-for-ibm-dotcom/packages/carbon-web-components/src/globals/settings.ts' file.
+    - Add a new line in the settings file, like this:
+      ```
+      ${prefix}-custom-component,
+      ```
+    - The 'settings.ts' file is located in the same folder as the Storybook.
+    - After adding the line, run the following command in the source directory:
+      ```
+      yarn build
+      ```
